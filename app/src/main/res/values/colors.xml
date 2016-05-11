@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_read">#9E9E9E</color>
+    <color name="color_unread">#000000</color>
+    <color name="color_source">#A1FFFFFF</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#B6B6B6</color>
+
+    <!--日间模式-->
+    <color name="theme_Day">#3F51B5</color>
+    <color name="textColorFirst_Day">#DD000000</color>
+    <color name="textColorSecond_Day">#89000000</color>
+    <color name="textColorThird_Day">#42000000</color>
+    <color name="background_Day">#FFFFFF</color>
+    <!--Toolbar字体颜色  -->
+    <color name="toolbar_Text_Color_Day">#DDFFFFFF</color>
+    <!--Toolbar-Menu字体颜色-->
+    <color name="toolbar_Menu_Text_Color_Day">#DD000000</color>
+    <!--Toolbar背景  -->
+    <color name="topbar_Background_Day">#3F51B5</color>
+    <!--主页item背景色-->
+    <color name="main_item_background_Day">#FFFFFF</color>
+
+    <!--夜间模式-->
+    <color name="theme_Night">#493518</color>
+    <color name="textColorFirst_Night">#DDFFFFFF</color>
+    <color name="textColorSecond_Night">#89FFFFFF</color>
+    <color name="textColorThird_Night">#42FFFFFF</color>
+    <color name="background_Night">#FF424242</color>
+    <!--Toolbar字体颜色  -->
+    <color name="toolbar_Text_Color_Night">#DDFFFFFF</color>
+    <!--Toolbar-Menu字体颜色-->
+    <color name="toolbar_Menu_Text_Color_Night">#DD000000</color>
+    <!--Toolbar背景  -->
+    <color name="topbar_Background_Night">#212121</color>
+    <color name="colorPrimaryDark_Night">#DD000000</color>
+    <!--主页item背景色-->
+    <color name="main_item_background_Night">#616161</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!-- 文字颜色：黑 70% -->
+    <color name="darkgray">#4c4c4c</color>
+    <!-- 文字颜色：灰 50% -->
+    <color name="lightgray">#7F7F7F</color>
+    <!-- 文字颜色：浅灰 30% -->
+    <color name="lightestgray">#B2B2B2</color>
+    <!-- 文字颜色：输入框提示文字 30% -->
+    <color name="hintgray">#B2B2B2</color>
+
+    <!-- 统一色调（正常&按下） -->
+    <color name="theme_bg_gray">#FBFBFB</color>
+
+    <color name="theme_btn_black">#333333</color>
+    <color name="theme_btn_black_press">#2B2B2B</color>
+    <color name="theme_btn_white">#FFFFFF</color>
+    <color name="theme_btn_white_press">#F3F3F3</color>
+    <color name="theme_btn_gray">#CCCCCC</color>
+    <color name="theme_btn_gray_press">#B2B2B2</color>
+    <color name="theme_btn_red">#FC696F</color>
+    <color name="theme_btn_red_press">#F1656B</color>
+    <color name="theme_btn_green">#01D1C1</color>
+    <color name="theme_btn_green_press">#02C6B7</color>
+
+    <color name="gray_point">#D8D8D8</color>
+
+    <color name="radiobutton_normal">#85000000</color>
+    <color name="radiobutton_pressed">#FFFE007F</color>
+    <color name="radio_colors">#FFFFFFFF</color>
+</resources>

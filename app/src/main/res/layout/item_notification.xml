@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/buy_rl_item"
+    android:layout_width="540px"
+    android:layout_height="220dp"
+    android:clickable="true"
+    app:cardCornerRadius="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/noti_img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/bottom_main_press"/>
+        <TextView
+            android:id="@+id/noti_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:text="苹果（Apple）iPhone 6 A1586 64G版 4G手机"
+            android:textColor="@color/darkgray"/>
+        <TextView
+            android:id="@+id/noti_txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:text="期号:123456"
+            android:textColor="@color/lightestgray"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dot_focus"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="10sp"
+                android:text="即将揭晓"
+                android:textColor="@color/theme_btn_red"/>
+        </LinearLayout>
+
+        <com.rxjava_niupai_lqtj.myui.view.Anticlockwise
+            android:id="@+id/noti_chronometer_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format="00 : 10 : 00 "
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/theme_btn_red"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

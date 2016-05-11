@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    }
+]

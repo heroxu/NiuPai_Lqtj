@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <dimen name="source_font_size">13sp</dimen>
+
+    <dimen name="about_text_size">16sp</dimen>
+    <dimen name="open_source_lis_text_size">14sp</dimen>
+
+    <dimen name="txt_specail_small">9sp</dimen>
+    <dimen name="txt_smallest">10sp</dimen>
+    <dimen name="txt_small">12sp</dimen>
+    <dimen name="txt_edit">14sp</dimen>
+    <dimen name="txt_btn">15sp</dimen>
+    <dimen name="txt_big">17sp</dimen>
+    <dimen name="txt_title">19sp</dimen>
+    <dimen name="txt_money">30sp</dimen>
+
+    <dimen name="w_edit_small">150dp</dimen>
+    <dimen name="h_bottom_center_btn">55dp</dimen>
+    <dimen name="h_btn">45dp</dimen>
+    <dimen name="h_edit">40dp</dimen>
+    <dimen name="h_edit_small">28dp</dimen>
+    <dimen name="h_item_header">60dp</dimen>
+    <dimen name="h_header">80dp</dimen>
+    <dimen name="h_big_header">90dp</dimen>
+    <dimen name="h_draft">210dp</dimen>
+    <dimen name="h_pop_sort">180dp</dimen>
+</resources>

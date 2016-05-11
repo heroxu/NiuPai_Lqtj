@@ -1,0 +1,46 @@
+<resources>
+    <!-- 系统类提示 -->
+    <string name="crash_handler_exit">很抱歉，程序出现异常，即将退出</string>
+
+    <!-- 页面标题 -->
+    <string name="fragment_buy_title">零钱淘金</string>
+    <string name="fragment_noti_title">最新揭晓</string>
+
+    <!-- 商品详情 -->
+    <string name="activity_goosdetail_buy_now">一元夺宝</string>
+    <string name="activity_goosdetail_add_bill">加入清单</string>
+    <string name="activity_goosdetail_text_description">新的一期正在火热进行中...</string>
+    <string name="activity_goosdetail_go_now">立即前往</string>
+    <string name="activity_goosdetail_noti_time">揭晓倒计时</string>
+    <string name="activity_goosdetail_not_join">您没有参加本期夺宝!</string>
+    <string name="activity_goosdetail_img_txt">图文详情</string>
+    <string name="activity_goosdetail_wifi_advance">建议在wifi下查看</string>
+    <string name="activity_goosdetail_noti_before">往期揭晓</string>
+    <string name="activity_goosdetail_share_bill">晒单分享</string>
+    <string name="activity_goosdetail_all_join_record">所有参与记录</string>
+
+
+    <string name="app_name">零钱淘金</string>
+    <string name="no_news">没有内容，请重试</string>
+    <string name="load_fail">加载失败，请重试</string>
+    <string name="load_more_fail">加载更多失败，请重试</string>
+    <string name="refresh">刷新</string>
+    <string name="change_daynight">切换主题</string>
+    <string name="main_menu_changetheme_day">夜间模式</string>
+    <string name="main_menu_changetheme_night">日间模式</string>
+
+
+
+    <!--主页面-->
+    <string name="main_washgold">淘金</string>
+    <string name="main_announced">最新揭晓</string>
+    <string name="main_discover">发现</string>
+    <string name="main_bill">清单</string>
+    <string name="main_person">我的</string>
+
+    <string name="main_goods_classify">分类</string>
+    <string name="main_ten_area">10元专区</string>
+    <string name="main_bask_bill">晒单</string>
+    <string name="main_common_problems">常见问题</string>
+
+</resources>
