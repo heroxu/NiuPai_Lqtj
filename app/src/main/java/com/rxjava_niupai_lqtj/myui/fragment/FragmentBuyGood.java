@@ -14,13 +14,10 @@ import com.rxjava_niupai_lqtj.App;
 import com.rxjava_niupai_lqtj.R;
 import com.rxjava_niupai_lqtj.base.BaseFragment;
 import com.rxjava_niupai_lqtj.base.GridItemDecoration;
-import com.rxjava_niupai_lqtj.myui.activity.MainActivity;
 import com.rxjava_niupai_lqtj.myui.adapter.BuyGoodAdapter;
-import com.rxjava_niupai_lqtj.myui.view.Kanner;
 import com.rxjava_niupai_lqtj.myui.view.RecyclerViewBaseOnPullToRefresh;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 /**
  * Created by xuxiarong on 2016/5/4.
@@ -33,8 +30,8 @@ public class FragmentBuyGood extends BaseFragment{
     ImageView mImgSearch;
     @Bind(R.id.fragment_buy_rv_goods)
     RecyclerViewBaseOnPullToRefresh mBuyRv;
-    @Bind(R.id.fragment_buy_kanner)
-    Kanner mKanner;
+//    @Bind(R.id.fragment_buy_kanner)
+//    Kanner mKanner;
 
     private App app;
     private Context mContext;
@@ -75,7 +72,7 @@ public class FragmentBuyGood extends BaseFragment{
 
     private void setHeader(RecyclerView view) {
         View header = LayoutInflater.from(mContext).inflate(R.layout.item_fragment_buy_frist, view, false);
-        ButterKnife.bind(header,(MainActivity)mContext);
+    //    ButterKnife.bind(header,(MainActivity)mContext);
         mBuyGoodAdapter.setHeaderView(header);
     }
 
