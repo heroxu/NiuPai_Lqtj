@@ -3,6 +3,7 @@ package com.rxjava_niupai_lqtj.network.manager;
 import com.rxjava_niupai_lqtj.App;
 import com.rxjava_niupai_lqtj.bean.Comment;
 import com.rxjava_niupai_lqtj.bean.GoodsDetail;
+import com.rxjava_niupai_lqtj.bean.GoodsList;
 import com.rxjava_niupai_lqtj.bean.IndexImgList;
 import com.rxjava_niupai_lqtj.bean.Notifications;
 import com.rxjava_niupai_lqtj.bean.ShowBill;
@@ -12,6 +13,7 @@ import com.rxjava_niupai_lqtj.utils.NetUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -32,7 +34,7 @@ import rx.Observable;
 public class MyRetrofitManager {
 
     public static final String BASE_NIUPAI_URL = "http://m.86422468.com/";
-
+    public static final String BASE_IMAGE_URL = "http://m.86422468.com";
     //短缓存有效期为1秒钟
     public static final int CACHE_STALE_SHORT = 1;
     //长缓存有效期为7天
@@ -124,8 +126,12 @@ public class MyRetrofitManager {
         return mNiuPaiService.getGoodsDetailById(id);
     }
 
-    public Observable<List<IndexImgList>> IndexImgList(){
-        return mNiuPaiService.IndexImgList();
+    public Observable<List<IndexImgList>> getIndexImgList(){
+        return mNiuPaiService.getIndexImgList();
+    }
+
+    public Observable<ArrayList<GoodsList>> getGoodList(String id, String pageNo, String pageSize){
+        return mNiuPaiService.getGoodList(id,pageNo,pageSize);
     }
 
 }

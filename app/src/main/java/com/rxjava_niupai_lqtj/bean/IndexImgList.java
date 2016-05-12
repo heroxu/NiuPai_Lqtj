@@ -8,24 +8,25 @@ import android.os.Parcelable;
  */
 public class IndexImgList implements Parcelable{
 
-    private String Stringid;// 幻灯片id
-    private String StringproImg;// 幻灯片图片地址
-    private String StringproUrl;// 幻灯片点击跳转链接
-    private String Stringseq;// 显示顺序
-    private String Stringstatus;// 状态0-启用，1-禁用
-    private String Stringtitle;// 幻灯片标题
+    private String id;// 幻灯片id
+    private String proImg;// 幻灯片图片地址
+    private String proUrl;// 幻灯片点击跳转链接
+    private String seq;// 显示顺序
+    private String status;// 状态0-启用，1-禁用
+    private String title;// 幻灯片标题
 
     public IndexImgList(){
 
     }
 
+
     protected IndexImgList(Parcel in) {
-        Stringid = in.readString();
-        StringproImg = in.readString();
-        StringproUrl = in.readString();
-        Stringseq = in.readString();
-        Stringstatus = in.readString();
-        Stringtitle = in.readString();
+        id = in.readString();
+        proImg = in.readString();
+        proUrl = in.readString();
+        seq = in.readString();
+        status = in.readString();
+        title = in.readString();
     }
 
     public static final Creator<IndexImgList> CREATOR = new Creator<IndexImgList>() {
@@ -47,11 +48,63 @@ public class IndexImgList implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(Stringid);
-        parcel.writeString(StringproImg);
-        parcel.writeString(StringproUrl);
-        parcel.writeString(Stringseq);
-        parcel.writeString(Stringstatus);
-        parcel.writeString(Stringtitle);
+        parcel.writeString(id);
+        parcel.writeString(proImg);
+        parcel.writeString(proUrl);
+        parcel.writeString(seq);
+        parcel.writeString(status);
+        parcel.writeString(title);
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getProImg() {
+        return proImg;
+    }
+
+    public void setProImg(String gproImg) {
+        this.proImg = gproImg;
+    }
+
+    public String getProUrl() {
+        return proUrl;
+    }
+
+    public void setProUrl(String proUrl) {
+        this.proUrl = proUrl;
+    }
+
+    public String getSeq() {
+        return seq;
+    }
+
+    public void setSeq(String seq) {
+        this.seq = seq;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public static Creator<IndexImgList> getCREATOR() {
+        return CREATOR;
     }
 }

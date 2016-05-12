@@ -6,7 +6,7 @@
     <com.rxjava_niupai_lqtj.myui.view.Kanner
         android:id="@+id/fragment_buy_kanner"
         android:layout_width="match_parent"
-        android:layout_height="135dp">
+        android:layout_height="180dp">
     </com.rxjava_niupai_lqtj.myui.view.Kanner>
     <LinearLayout
         android:background="@drawable/bg_banner_bottom"
