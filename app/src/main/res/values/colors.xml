@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--零钱淘金项目主要字体颜色-->
+    <color name="txt_important_title">#333333</color>
+    <color name="txt_normal_title">#666666</color>
+    <color name="txt_secondary_title">#999999</color>
+
+    <color name="txt_press_bg">#d9d9d9</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>

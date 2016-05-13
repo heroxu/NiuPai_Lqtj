@@ -6,7 +6,7 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/h_btn">
+        android:layout_height="@dimen/y144">
         <TextView
             android:id="@+id/fragment_buy_txt_title"
             android:gravity="center"
@@ -20,7 +20,7 @@
             android:id="@+id/fragment_buy_img_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/x50"
             android:layout_centerInParent="true"
             android:scaleType="fitCenter"
             android:layout_alignParentLeft="true"
@@ -30,6 +30,7 @@
         android:id="@+id/fragment_buy_rv_goods"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         ptr:ptrAnimationStyle="flip"
         ptr:ptrDrawableEnd="@color/transparent"
         android:layout_marginBottom="5dp"/>

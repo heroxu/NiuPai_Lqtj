@@ -6,163 +6,143 @@
     <com.rxjava_niupai_lqtj.myui.view.Kanner
         android:id="@+id/fragment_buy_kanner"
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="@dimen/y450">
     </com.rxjava_niupai_lqtj.myui.view.Kanner>
     <LinearLayout
         android:background="@drawable/bg_banner_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/y277"
         android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+
             <ImageView
+                android:id="@+id/buy_img_classfly"
                 android:layout_gravity="center"
-                android:scaleType="fitXY"
-                android:layout_width="@dimen/h_btn"
-                android:layout_height="@dimen/h_btn"
-                android:src="@drawable/bottom_main_press"/>
-            <TextView
-                android:text="分类"
-                android:padding="5dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/classfly"/>
+
             <ImageView
+                android:id="@+id/buy_img_game_area"
                 android:layout_gravity="center"
-                android:scaleType="fitXY"
-                android:layout_width="@dimen/h_btn"
-                android:layout_height="@dimen/h_btn"
-                android:src="@drawable/bottom_main_press"/>
-            <TextView
-                android:text="分类"
-                android:padding="5dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/game_area"/>
+
             <ImageView
+                android:id="@+id/buy_img_show_bill"
                 android:layout_gravity="center"
-                android:scaleType="fitXY"
-                android:layout_width="@dimen/h_btn"
-                android:layout_height="@dimen/h_btn"
-                android:src="@drawable/bottom_main_press"/>
-            <TextView
-                android:text="分类"
-                android:padding="5dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/show_bill"/>
+
             <ImageView
+                android:id="@+id/buy_img_normal_probelm"
                 android:layout_gravity="center"
-                android:scaleType="fitXY"
-                android:layout_width="@dimen/h_btn"
-                android:layout_height="@dimen/h_btn"
-                android:src="@drawable/bottom_main_press"/>
-            <TextView
-                android:text="分类"
-                android:padding="5dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+                android:scaleType="centerInside"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/normal_probelm"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/h_btn"
+        android:layout_height="@dimen/y120"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:src="@drawable/cb_checked"/>
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x25"
+            android:src="@drawable/noti_winner"/>
         <TextView
+            android:id="@+id/buy_txt_noti_winner"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/x50"
             android:maxLines="2"
-            android:text="恭喜您中奖了，赶紧购买吧恭"
-            android:textSize="12sp"
-            android:textColor="@color/darkgray"/>
+            android:text="恭喜您中奖了恭喜您中奖了恭喜您中奖了恭喜您中奖了恭喜您中奖了，赶紧购买吧恭"
+            android:textSize="@dimen/y36"
+            android:textColor="@color/txt_important_title"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:background="@color/theme_btn_white_press"/>
     <LinearLayout
+
         android:background="@drawable/bg_banner_bottom"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/h_btn"
+        android:layout_height="@dimen/y120"
         android:orientation="horizontal">
         <TextView
+            android:id="@+id/buy_txt_popularity"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="人气"
+            android:background="@drawable/txt_press_bg"
             android:textColor="@color/theme_btn_red"
-            android:textSize="15sp"/>
+            android:textSize="@dimen/y40"/>
         <TextView
+            android:id="@+id/buy_txt_newest"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
+            android:background="@drawable/txt_press_bg"
             android:gravity="center"
             android:text="最新"
-            android:textSize="15sp"/>
+            android:textSize="@dimen/y40"/>
         <TextView
+            android:id="@+id/buy_txt_progress"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
+            android:background="@drawable/txt_press_bg"
             android:gravity="center"
             android:text="进度"
-            android:textSize="15sp"/>
+            android:textSize="@dimen/y40"/>
         <RelativeLayout
+            android:id="@+id/buy_rl_all_person"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:background="@drawable/txt_press_bg"
             android:gravity="center"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/fragment_buy_txt_all"
+                android:id="@+id/buy_txt_all_person"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:gravity="center"
                 android:text="总需人次"
-                android:textSize="15sp"/>
+                android:textSize="@dimen/y40"/>
             <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
+                android:id="@+id/buy_img_arrow_up"
+                android:layout_width="@dimen/y33"
+                android:layout_height="@dimen/y33"
                 android:rotation="90"
                 android:layout_marginLeft="2dp"
-                android:layout_toRightOf="@+id/fragment_buy_txt_all"
-                android:layout_alignTop="@id/fragment_buy_txt_all"
+                android:layout_toRightOf="@+id/buy_txt_all_person"
+                android:layout_centerInParent="true"
                 android:src="@drawable/img_back_normal"/>
             <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
+                android:id="@+id/buy_img_arrow_donw"
+                android:layout_width="@dimen/y33"
+                android:layout_height="@dimen/y33"
+                android:visibility="gone"
                 android:rotation="270"
                 android:layout_marginLeft="2dp"
-                android:layout_toRightOf="@+id/fragment_buy_txt_all"
-                android:layout_alignBottom="@id/fragment_buy_txt_all"
+                android:layout_toRightOf="@+id/buy_txt_all_person"
+                android:layout_centerInParent="true"
                 android:src="@drawable/img_back_normal"/>
         </RelativeLayout>
     </LinearLayout>

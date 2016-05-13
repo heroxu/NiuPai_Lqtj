@@ -1,11 +1,23 @@
 [
     {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
         "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
         "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
         "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
         "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
     },
     {
         "merged": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
@@ -22,6 +34,10 @@
     {
         "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
         "source": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
     },
     {
         "merged": "F:\\work\\niupai\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",

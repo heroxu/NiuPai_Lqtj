@@ -12,9 +12,13 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.rxjava_niupai_lqtj.R;
+import com.rxjava_niupai_lqtj.bean.IndexImgList;
+import com.rxjava_niupai_lqtj.myui.activity.MainActivity;
+import com.rxjava_niupai_lqtj.myui.activity.WebViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +35,7 @@ public class Kanner extends FrameLayout {
     private LinearLayout ll_dot;
     private List<ImageView> iv_dots;
     private Handler handler = new Handler();
+    private List<IndexImgList> mIndexImgLists = new ArrayList<IndexImgList>();
 //    private DisplayImageOptions options;
 
     public Kanner(Context context, AttributeSet attrs, int defStyle) {
@@ -60,6 +65,10 @@ public class Kanner extends FrameLayout {
         showTime();
     }
 
+    public void setIndexImgLists(List<IndexImgList> mIndexImgLists) {
+        this.mIndexImgLists = mIndexImgLists;
+    }
+
     public void setImagesRes(int[] imagesRes) {
         initLayout();
         initImgFromRes(imagesRes);
@@ -82,8 +91,9 @@ public class Kanner extends FrameLayout {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT);
-            params.leftMargin = 5;
-            params.rightMargin = 5;
+            params.leftMargin = R.dimen.x20;
+            params.rightMargin = R.dimen.x20;
+            params.bottomMargin = R.dimen.y20;
             iv_dot.setImageResource(R.drawable.dot_blur);
             ll_dot.addView(iv_dot, params);
             iv_dots.add(iv_dot);
@@ -186,8 +196,17 @@ public class Kanner extends FrameLayout {
         }
 
         @Override
-        public Object instantiateItem(ViewGroup container, int position) {
+        public Object instantiateItem(ViewGroup container, final int position) {
             container.addView(imageViews.get(position));
+            imageViews.get(position).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(context instanceof MainActivity){
+                        Toast.makeText(context,""+(position-1),Toast.LENGTH_SHORT).show();
+                        WebViewActivity.start(context,mIndexImgLists.get(position-1).getTitle(),mIndexImgLists.get(position-1).getProUrl());
+                    }
+                }
+            });
             return imageViews.get(position);
         }
 

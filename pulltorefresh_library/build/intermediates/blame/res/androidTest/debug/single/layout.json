@@ -12,8 +12,16 @@
         "source": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
     },
     {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
         "merged": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
         "source": "F:\\Users\\susan\\Desktop\\mvp_csc_hnc_2.1.0\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "C:\\NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
     },
     {
         "merged": "C:\\Rxjava_NiuPai_Lqtj\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",

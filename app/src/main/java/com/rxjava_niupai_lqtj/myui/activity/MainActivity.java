@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.rxjava_niupai_lqtj.App;
 import com.rxjava_niupai_lqtj.R;
@@ -34,39 +32,16 @@ public class MainActivity extends BaseNotSwipeActivity{
 //    ViewGroup mViewGroup;
 //    @Bind(R.id.iv_main)
 //    ImageView mIvMain;
-    @Bind(R.id.main_img_washgold)
-    ImageView mImgWashgod;
-    @Bind(R.id.main_img_announced)
-    ImageView mImgAnniunced;
-    @Bind(R.id.main_img_discover)
-    ImageView mImgDiscover;
-    @Bind(R.id.main_img_bill)
-    ImageView mImgBill;
+    @Bind(R.id.main_img_buy)
+    ImageView mImgBuy;
+    @Bind(R.id.main_img_noti)
+    ImageView mImgNoti;
+    @Bind(R.id.main_img_showbill)
+    ImageView mImgShowbill;
+    @Bind(R.id.main_img_cart)
+    ImageView mImgCart;
     @Bind(R.id.main_img_person)
     ImageView mImgPerson;
-
-
-    @Bind(R.id.main_txt_washgold)
-    TextView mTxtWashgod;
-    @Bind(R.id.main_txt_announced)
-    TextView mTxtAnniunced;
-    @Bind(R.id.main_txt_discover)
-    TextView mTxtDiscover;
-    @Bind(R.id.main_txt_bill)
-    TextView mTxtBill;
-    @Bind(R.id.main_txt_person)
-    TextView mTxtPerson;
-
-    @Bind(R.id.rl_washgold)
-    RelativeLayout mRlWashgod;
-    @Bind(R.id.rl_announced)
-    RelativeLayout mRlAnniunced;
-    @Bind(R.id.rl_discover)
-    RelativeLayout mRlDiscover;
-    @Bind(R.id.rl_bill)
-    RelativeLayout mRlBill;
-    @Bind(R.id.rl_person)
-    RelativeLayout mRlPerson;
 
     @Bind(R.id.main_vp_pager)
     ViewPager mVpPager;
@@ -82,7 +57,7 @@ public class MainActivity extends BaseNotSwipeActivity{
 
     private Context mContext;
     private App app;
-    List<RelativeLayout> mViewIds = new ArrayList<RelativeLayout>();
+    List<ImageView> mViewIds = new ArrayList<ImageView>();
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -90,6 +65,11 @@ public class MainActivity extends BaseNotSwipeActivity{
             onBackPressed();
         }
         return true;
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_fragment_main;
     }
 
     @Override
@@ -112,21 +92,18 @@ public class MainActivity extends BaseNotSwipeActivity{
         }
     }
 
-    @Override
-    protected int getLayoutId() {
-        return R.layout.activity_fragment_main;
-    }
+
 
     @Override
     protected void afterCreate(Bundle savedState) {
         mContext = this;
         app = (App)mContext.getApplicationContext();
         app.addClearActivity(this);
-        mViewIds.add(mRlWashgod);
-        mViewIds.add(mRlAnniunced);
-        mViewIds.add(mRlDiscover);
-        mViewIds.add(mRlBill);
-        mViewIds.add(mRlPerson);
+        mViewIds.add(mImgBuy);
+        mViewIds.add(mImgNoti);
+        mViewIds.add(mImgShowbill);
+        mViewIds.add(mImgCart);
+        mViewIds.add(mImgPerson);
         initData(savedState);
     }
 
@@ -157,7 +134,7 @@ public class MainActivity extends BaseNotSwipeActivity{
         mVpPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageSelected(int arg0) {
-                pickDoor(mViewIds.get(arg0));
+                selectCurrentItem(mViewIds.get(arg0));
             }
 
             @Override
@@ -172,73 +149,48 @@ public class MainActivity extends BaseNotSwipeActivity{
         mVpPager.setCurrentItem(0);
     }
 
-    @OnClick({ R.id.rl_washgold, R.id.rl_announced, R.id.rl_discover,R.id.rl_bill,R.id.rl_person})
-    public void pickDoor(RelativeLayout rlView) {
+    @OnClick({ R.id.main_img_buy, R.id.main_img_noti, R.id.main_img_showbill,R.id.main_img_cart,R.id.main_img_person})
+    public void selectCurrentItem(ImageView rlView) {
         switch (rlView.getId()) {
-            case R.id.rl_washgold:
+            case R.id.main_img_buy:
                 mVpPager.setCurrentItem(0);
-                mImgWashgod.setImageResource(R.drawable.bottom_main_press);
-                mTxtWashgod.setTextColor(this.getResources().getColor(R.color.theme_btn_red));
-                mImgAnniunced.setImageResource(R.drawable.bottom_collect_normal);
-                mTxtAnniunced.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgDiscover.setImageResource(R.drawable.bottom_msg_normal);
-                mTxtDiscover.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgBill.setImageResource(R.drawable.bottom_cart_normal);
-                mTxtBill.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgPerson.setImageResource(R.drawable.bottom_my_normal);
-                mTxtPerson.setTextColor(this.getResources().getColor(R.color.darkgray));
+                mImgBuy.setImageResource(R.drawable.buy_press);
+                mImgNoti.setImageResource(R.drawable.noti_no_press);
+                mImgShowbill.setImageResource(R.drawable.show_bill_no_press);
+                mImgCart.setImageResource(R.drawable.cart_no_press);
+                mImgPerson.setImageResource(R.drawable.person_no_press);
                 break;
-            case R.id.rl_announced:
+            case R.id.main_img_noti:
                 mVpPager.setCurrentItem(1);
-                mImgWashgod.setImageResource(R.drawable.bottom_main_normal);
-                mTxtWashgod.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgAnniunced.setImageResource(R.drawable.bottom_collect_press);
-                mTxtAnniunced.setTextColor(this.getResources().getColor(R.color.theme_btn_red));
-                mImgDiscover.setImageResource(R.drawable.bottom_msg_normal);
-                mTxtDiscover.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgBill.setImageResource(R.drawable.bottom_cart_normal);
-                mTxtBill.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgPerson.setImageResource(R.drawable.bottom_my_normal);
-                mTxtPerson.setTextColor(this.getResources().getColor(R.color.darkgray));
+                mImgBuy.setImageResource(R.drawable.buy_no_press);
+                mImgNoti.setImageResource(R.drawable.noti_press);
+                mImgShowbill.setImageResource(R.drawable.show_bill_no_press);
+                mImgCart.setImageResource(R.drawable.cart_no_press);
+                mImgPerson.setImageResource(R.drawable.person_no_press);
                 break;
-            case R.id.rl_discover:
+            case R.id.main_img_showbill:
                 mVpPager.setCurrentItem(2);
-                mImgWashgod.setImageResource(R.drawable.bottom_main_normal);
-                mTxtWashgod.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgAnniunced.setImageResource(R.drawable.bottom_collect_normal);
-                mTxtAnniunced.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgDiscover.setImageResource(R.drawable.bottom_msg_press);
-                mTxtDiscover.setTextColor(this.getResources().getColor(R.color.theme_btn_red));
-                mImgBill.setImageResource(R.drawable.bottom_cart_normal);
-                mTxtBill.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgPerson.setImageResource(R.drawable.bottom_my_normal);
-                mTxtPerson.setTextColor(this.getResources().getColor(R.color.darkgray));
+                mImgBuy.setImageResource(R.drawable.buy_no_press);
+                mImgNoti.setImageResource(R.drawable.noti_no_press);
+                mImgShowbill.setImageResource(R.drawable.show_bill_press);
+                mImgCart.setImageResource(R.drawable.cart_no_press);
+                mImgPerson.setImageResource(R.drawable.person_no_press);
                 break;
-            case R.id.rl_bill:
+            case R.id.main_img_cart:
                 mVpPager.setCurrentItem(3);
-                mImgWashgod.setImageResource(R.drawable.bottom_main_normal);
-                mTxtWashgod.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgAnniunced.setImageResource(R.drawable.bottom_collect_normal);
-                mTxtAnniunced.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgDiscover.setImageResource(R.drawable.bottom_msg_normal);
-                mTxtDiscover.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgBill.setImageResource(R.drawable.bottom_cart_press);
-                mTxtBill.setTextColor(this.getResources().getColor(R.color.theme_btn_red));
-                mImgPerson.setImageResource(R.drawable.bottom_my_normal);
-                mTxtPerson.setTextColor(this.getResources().getColor(R.color.darkgray));
+                mImgBuy.setImageResource(R.drawable.buy_no_press);
+                mImgNoti.setImageResource(R.drawable.noti_no_press);
+                mImgShowbill.setImageResource(R.drawable.show_bill_no_press);
+                mImgCart.setImageResource(R.drawable.cart_press);
+                mImgPerson.setImageResource(R.drawable.person_no_press);
                 break;
-            case R.id.rl_person:
+            case R.id.main_img_person:
                 mVpPager.setCurrentItem(4);
-                mImgWashgod.setImageResource(R.drawable.bottom_main_normal);
-                mTxtWashgod.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgAnniunced.setImageResource(R.drawable.bottom_collect_normal);
-                mTxtAnniunced.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgDiscover.setImageResource(R.drawable.bottom_msg_normal);
-                mTxtDiscover.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgBill.setImageResource(R.drawable.bottom_cart_normal);
-                mTxtBill.setTextColor(this.getResources().getColor(R.color.darkgray));
-                mImgPerson.setImageResource(R.drawable.bottom_my_normal2);
-                mTxtPerson.setTextColor(this.getResources().getColor(R.color.theme_btn_red));
+                mImgBuy.setImageResource(R.drawable.buy_no_press);
+                mImgNoti.setImageResource(R.drawable.noti_no_press);
+                mImgShowbill.setImageResource(R.drawable.show_bill_no_press);
+                mImgCart.setImageResource(R.drawable.cart_no_press);
+                mImgPerson.setImageResource(R.drawable.person_press);
                 break;
             default:
                 break;

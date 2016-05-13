@@ -35,6 +35,7 @@ public class MyRetrofitManager {
 
     public static final String BASE_NIUPAI_URL = "http://m.86422468.com/";
     public static final String BASE_IMAGE_URL = "http://m.86422468.com";
+    public static final String BASE_WWW_URL = "http://www.86422468.com";
     //短缓存有效期为1秒钟
     public static final int CACHE_STALE_SHORT = 1;
     //长缓存有效期为7天
